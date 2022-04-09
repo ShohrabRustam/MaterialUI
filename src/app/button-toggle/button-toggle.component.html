@@ -7,9 +7,12 @@
 
 <div class="container">
   <h1>Use button-toggle-group</h1>
-<mat-button-toggle-group>
-  <mat-button-toggle value="Angular">Angular</mat-button-toggle>
-  <mat-button-toggle value="React" >React</mat-button-toggle>
-  <mat-button-toggle value="Vue">Vue</mat-button-toggle>
-</mat-button-toggle-group>
+  <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
+    <mat-button-toggle value="Angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="React" >React</mat-button-toggle>
+    <mat-button-toggle value="Vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+  <br><br>
+  <h1 >{{toggleGroup.value}}</h1>
 </div>
+
