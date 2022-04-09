@@ -34,7 +34,9 @@
               "src/styles.css",
               "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -103,7 +105,9 @@
               "src/styles.css",
               "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           }
         }
       }
@@ -111,3 +115,4 @@
   },
   "defaultProject": "MaterialUI"
 }
+
