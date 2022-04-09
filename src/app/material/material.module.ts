@@ -9,9 +9,7 @@ const MaterialComponent=[
 
 @NgModule({
   declarations: [],
-  imports: [
-
-   ],
-  exports: []
+  imports: [ MaterialComponent ],
+  exports: [ MaterialComponent ]
 })
 export class MaterialModule { }
