@@ -14,6 +14,7 @@ import { MaterialModule } from './material/material.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    // import materialModule (CustomModule )
     MaterialModule
   ],
   providers: [],
