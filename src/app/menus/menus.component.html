@@ -1,8 +1,17 @@
 <div class="container" >
   <mat-menu #appMenu="matMenu">
-    <button mat-menu-item>FrontEnd</button>
+    <button mat-menu-item [matMenuTriggerFor]="subMenu">FrontEnd</button>
     <button mat-menu-item>BackEnd</button>
 
   </mat-menu>
   <button mat-flat-button color="primary"  [matMenuTriggerFor]="appMenu">Menu</button>
+</div>
+<br><br><br>
+<div class="container">
+  <h1>Nested Menu</h1>
+  <mat-menu #subMenu="matMenu">
+    <button mat-menu-item>Angular</button>
+    <button mat-menu-item>React</button>
+    <button mat-menu-item>Vue</button>
+  </mat-menu>
 </div>
