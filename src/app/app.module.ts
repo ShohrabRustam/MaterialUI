@@ -20,6 +20,7 @@ import { PanelComponent } from './panel/panel.component';
 import { CardComponent } from './card/card.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { StepperComponent } from './stepper/stepper.component';
+import { InputComponent } from './input/input.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { StepperComponent } from './stepper/stepper.component';
     PanelComponent,
     CardComponent,
     TabsComponent,
-    StepperComponent
+    StepperComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
