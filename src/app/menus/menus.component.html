@@ -15,3 +15,16 @@
     <button mat-menu-item>Vue</button>
   </mat-menu>
 </div>
+<br><br><br>
+
+<div class="container">
+  <h1>Lazy Menu</h1>
+<mat-menu #lazyMenu="matMenu">
+<ng-template matMenuContent>
+<button mat-menu-item>Setting</button>
+<button mat-menu-item> Logout </button>
+</ng-template>
+</mat-menu>
+<button mat-flat-button color="primary" [matMenuTriggerFor]="lazyMenu" >Rustam</button>
+<button mat-flat-button color="primary" [matMenuTriggerFor]="lazyMenu">Codevolution</button>
+</div>
