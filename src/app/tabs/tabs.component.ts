@@ -12,4 +12,7 @@ export class TabsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  func(index:any){
+    console.log(index);
+  }
 }
