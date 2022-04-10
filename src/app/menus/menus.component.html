@@ -9,7 +9,7 @@
 <br><br><br>
 <div class="container">
   <h1>Nested Menu</h1>
-  <mat-menu #subMenu="matMenu">
+  <mat-menu #subMenu="matMenu" xPosition="before" yPosition="below">
     <button mat-menu-item>Angular</button>
     <button mat-menu-item>React</button>
     <button mat-menu-item>Vue</button>
@@ -19,16 +19,19 @@
 
 <div class="container">
   <h1>Lazy Menu</h1>
-  <mat-menu #lazyMenu="matMenu">
-    <ng-template matMenuContent let-name="name">
+  <mat-menu #lazyMenu="matMenu" xPosition="before" yPosition="below">
+    <ng-template matMenuContent let-name="name"  let-hob="hobby">
       <button mat-menu-item>Setting</button>
-      <button mat-menu-item> Logout {{ name }} </button>
+      <button mat-menu-item>name is : {{name }}</button>
+      <button mat-menu-item>hobby is : {{ hob }}</button>
+
+      <button mat-menu-item> Logout  </button>
     </ng-template>
   </mat-menu>
   <button mat-flat-button color="primary" [matMenuTriggerFor]="lazyMenu"
-    [matMenuTriggerData]="{name:'Rustam'}"
+    [matMenuTriggerData]="{name:'Rustam',hobby:'Chess'}"
     >Rustam</button>
   <button mat-flat-button color="primary" [matMenuTriggerFor]="lazyMenu"
-    [matMenuTriggerData]="{name:'Codevolution'}"
+    [matMenuTriggerData]="{name:'Codevolution',hobby:'Playing Card'}"
     >Codevolution</button>
 </div>
