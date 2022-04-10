@@ -20,9 +20,9 @@
 <div class="container">
   <h1>Lazy Menu</h1>
   <mat-menu #lazyMenu="matMenu">
-    <ng-template matMenuContent>
+    <ng-template matMenuContent let-name="name">
       <button mat-menu-item>Setting</button>
-      <button mat-menu-item> Logout </button>
+      <button mat-menu-item> Logout {{ name }} </button>
     </ng-template>
   </mat-menu>
   <button mat-flat-button color="primary" [matMenuTriggerFor]="lazyMenu"
