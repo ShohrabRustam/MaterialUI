@@ -1,10 +1,10 @@
-<div class="container" >
+<div class="container">
   <mat-menu #appMenu="matMenu" xPosition="before" yPosition="above">
     <button mat-menu-item [matMenuTriggerFor]="subMenu">FrontEnd</button>
     <button mat-menu-item>BackEnd</button>
 
   </mat-menu>
-  <button class="center" mat-flat-button color="primary"  [matMenuTriggerFor]="appMenu">Menu</button>
+  <button class="center" mat-flat-button color="primary" [matMenuTriggerFor]="appMenu">Menu</button>
 </div>
 <br><br><br>
 <div class="container">
@@ -19,12 +19,16 @@
 
 <div class="container">
   <h1>Lazy Menu</h1>
-<mat-menu #lazyMenu="matMenu">
-<ng-template matMenuContent>
-<button mat-menu-item>Setting</button>
-<button mat-menu-item> Logout </button>
-</ng-template>
-</mat-menu>
-<button mat-flat-button color="primary" [matMenuTriggerFor]="lazyMenu" >Rustam</button>
-<button mat-flat-button color="primary" [matMenuTriggerFor]="lazyMenu">Codevolution</button>
+  <mat-menu #lazyMenu="matMenu">
+    <ng-template matMenuContent>
+      <button mat-menu-item>Setting</button>
+      <button mat-menu-item> Logout </button>
+    </ng-template>
+  </mat-menu>
+  <button mat-flat-button color="primary" [matMenuTriggerFor]="lazyMenu"
+    [matMenuTriggerData]="{name:'Rustam'}"
+    >Rustam</button>
+  <button mat-flat-button color="primary" [matMenuTriggerFor]="lazyMenu"
+    [matMenuTriggerData]="{name:'Codevolution'}"
+    >Codevolution</button>
 </div>
