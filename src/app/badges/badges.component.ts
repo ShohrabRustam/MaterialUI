@@ -9,6 +9,7 @@ export class BadgesComponent implements OnInit {
 
   constructor() { }
   notifications = 2;
+  notification =0;
 
   ngOnInit(): void {
   }
