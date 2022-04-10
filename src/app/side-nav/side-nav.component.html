@@ -1,7 +1,9 @@
 <div>
 
   <mat-sidenav-container>
-  <mat-sidenav opened>SideNav </mat-sidenav>
-  <mat-sidenav-content>Main</mat-sidenav-content>
+  <mat-sidenav  [(opened)]="opened">SideNav </mat-sidenav>
+  <mat-sidenav-content>Main
+    <button (click)="open()">Toggle Button </button>
+  </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

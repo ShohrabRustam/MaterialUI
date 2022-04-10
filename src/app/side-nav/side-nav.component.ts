@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-nav.component.css']
 })
 export class SideNavComponent implements OnInit {
+  opened:boolean =false;
 
   constructor() { }
-
   ngOnInit(): void {
   }
+
+  open(){
+    this.opened = !this.opened;
+  }
+
 
 }
