@@ -1,1 +1,8 @@
-<p>menus works!</p>
+<div class="container" >
+  <mat-menu #appMenu="matMenu">
+    <button mat-menu-item>FrontEnd</button>
+    <button mat-menu-item>BackEnd</button>
+
+  </mat-menu>
+  <button mat-flat-button color="primary" [matMenuTriggerFor]="appMenu">Menu</button>
+</div>

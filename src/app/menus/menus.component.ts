@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenusComponent implements OnInit {
 
+  matMenu:any;
   constructor() { }
 
   ngOnInit(): void {
