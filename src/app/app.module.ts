@@ -17,6 +17,7 @@ import { MenusComponent } from './menus/menus.component';
 import { ListComponent } from './list/list.component';
 import { GridlistComponent } from './gridlist/gridlist.component';
 import { PanelComponent } from './panel/panel.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { PanelComponent } from './panel/panel.component';
     MenusComponent,
     ListComponent,
     GridlistComponent,
-    PanelComponent
+    PanelComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
