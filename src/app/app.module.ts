@@ -16,6 +16,7 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { MenusComponent } from './menus/menus.component';
 import { ListComponent } from './list/list.component';
 import { GridlistComponent } from './gridlist/gridlist.component';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { GridlistComponent } from './gridlist/gridlist.component';
     SideNavComponent,
     MenusComponent,
     ListComponent,
-    GridlistComponent
+    GridlistComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
