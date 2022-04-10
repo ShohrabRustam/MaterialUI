@@ -1,6 +1,4 @@
-div{
-  margin: 10px;
-}
+
 mat-sidenav-container{
   height: 100%;
 }
@@ -9,5 +7,5 @@ padding: 16px;
 }
 mat-sidenav{
   background-color: lightcoral;
-  width: 200px;
+  width: 15%;
 }
