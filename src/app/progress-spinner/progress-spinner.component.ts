@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./progress-spinner.component.css']
 })
 export class ProgressSpinnerComponent implements OnInit {
-
+  showSpinner:boolean=false;
   constructor() { }
 
   ngOnInit(): void {
