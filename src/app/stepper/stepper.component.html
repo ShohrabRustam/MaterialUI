@@ -21,13 +21,19 @@
 <br><br><br>
 <div class="container" linear>
 <h1>Linear Stepper</h1>
-<mat-horizontal-stepper>
-  <mat-step label="Shipping Address"> Shipping Address Details</mat-step>
-  <mat-step label="Billing Address">Billing Address Details
-  <div>  <button mat-button matStepperPrevious color="primary"> Back</button></div>
+<mat-horizontal-stepper linear>
+  <mat-step label="Shipping Address" completed="false"> Shipping Address Details
+
   <div>  <button mat-button matStepperNext color="primary"> Next</button></div>
+  </mat-step>
+  <mat-step label="Billing Address" completed="false">Billing Address Details
+  <div>  <button mat-button matStepperPrevious color="primary"> Back</button></div>
+  <div>  <button mat-button matStepperNext color="primary" (click)="completed"> Next</button></div>
 </mat-step>
-  <mat-step label="Place Order">Place Order Details</mat-step>
+  <mat-step label="Place Order" completed="false">Place Order Details
+
+  <div>  <button mat-button matStepperPrevious color="primary"> Back</button></div>
+  </mat-step>
 </mat-horizontal-stepper>
 
 </div>
