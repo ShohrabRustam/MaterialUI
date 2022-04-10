@@ -11,6 +11,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { FormsModule } from '@angular/forms';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatListModule} from '@angular/material/list';
 
 
 const MaterialComponent=[
@@ -23,7 +24,8 @@ const MaterialComponent=[
   MatToolbarModule,
   MatSidenavModule,
   FormsModule,
-  MatMenuModule
+  MatMenuModule,
+  MatListModule
 ]
 
 @NgModule({
