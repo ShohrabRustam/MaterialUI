@@ -11,5 +11,11 @@ export class ProgressSpinnerComponent implements OnInit {
 
   ngOnInit(): void {
   }
+   loadData(){
+    this.showSpinner=true;
+    setTimeout(()=>{
+      this.showSpinner=false;
+    },5000);
+   }
 
 }

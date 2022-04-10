@@ -15,5 +15,6 @@
   <p>The inderterminate spinner use for that something is running in the backgroud and the ui is in progress there is something progress in backgound
 
   </p>
-  <mat-spinner></mat-spinner>
+  <mat-spinner *ngIf="showSpinner"></mat-spinner>
+  <button (click)="loadData()">Load Data</button>
 </div>
