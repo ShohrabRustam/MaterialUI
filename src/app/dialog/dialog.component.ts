@@ -14,6 +14,6 @@ export class DialogComponent implements OnInit {
   }
 
   openDialog(){
-
+    // this.dialog.open()
   }
 }

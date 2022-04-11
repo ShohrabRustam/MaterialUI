@@ -58,6 +58,7 @@ import { DialogExampleComponent } from './dialog-example/dialog-example.componen
     DialogComponent,
     DialogExampleComponent,
   ],
+  entryComponents:[DialogExampleComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
