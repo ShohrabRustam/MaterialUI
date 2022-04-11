@@ -2,6 +2,11 @@
  <mat-form-field>
 <input matInput [matDatepicker]=" myDatePicker">
 <mat-datepicker-toggle matSuffix [for]="myDatePicker"> </mat-datepicker-toggle>
-<mat-datepicker #myDatePicker></mat-datepicker>
+<mat-datepicker #myDatePicker ></mat-datepicker>
  </mat-form-field>
+ <br><br>
+ <mat-form-field>
+  <input matInput [matDatepicker]=" myDatePicker">
+  <mat-datepicker-toggle matSuffix [for]="myDatePicker"> </mat-datepicker-toggle>
+  <mat-datepicker #myDatePicker startView="year" ></mat-datepicker></mat-form-field>
 </div>
