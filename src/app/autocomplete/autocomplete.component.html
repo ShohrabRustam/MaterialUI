@@ -4,6 +4,7 @@
   <mat-label>Name</mat-label>
   <input type="text" matInput>
   <mat-autocomplete>
+    <!-- fatchin the autocomplete data from the variable  -->
 <mat-option *ngFor="let option of options" [value]="option">
   <h1>{{ option }}</h1>
 </mat-option>
