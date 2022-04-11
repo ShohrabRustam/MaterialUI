@@ -12,8 +12,8 @@ export class SanckbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  openSnakeBar(message:any){
-    this.snackBar.open(message);
+  openSnakeBar(message:any,action:any){
+    this.snackBar.open(message,action);
   }
 
 }
