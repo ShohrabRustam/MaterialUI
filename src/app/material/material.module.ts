@@ -22,6 +22,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 const MaterialComponent=[
@@ -45,7 +47,8 @@ const MaterialComponent=[
   MatInputModule,
   MatFormFieldModule,
   MatSelectModule,
-  MatAutocompleteModule
+  MatAutocompleteModule,
+  ReactiveFormsModule
 ]
 
 @NgModule({
