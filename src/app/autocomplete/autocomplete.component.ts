@@ -6,8 +6,6 @@ import { map } from 'rxjs/operators';
 import { startWith } from 'rxjs/operators';
 
 
-
-
 @Component({
   selector: 'app-autocomplete',
   templateUrl: './autocomplete.component.html',
@@ -16,33 +14,36 @@ import { startWith } from 'rxjs/operators';
 
 export class AutocompleteComponent implements OnInit {
 
-  options:string[]=["Angular", "React", "Vue"];
-  objectOptions=[
-    {name:"Angular"},
-    {name:"Angular Material"},
-    {name:"React"},
-    {name:"Vue"}
+  myControl = new FormControl();
 
-  ]
+  options: string[] = ["Angular", "React", "Vue"];
+
+  // filterOptions: any = Observable <string[]> ;
+
+  objectOptions =   [
+    { name: "Angular" },
+    { name: "Angular Material" },
+    { name: "React" },
+    { name: "Vue" }
+
+  ];
+
   constructor() { }
-  myControl:any=new FormControl();
 
-  filterOptions :any= Observable<string[]>;
-
-  private _filter(value:any):any{
-    const filterValue:string=value.toLowerCase();
-    return this.options.filter(option=>option.toLowerCase().includes(filterValue));
-  }
 
   ngOnInit(): void {
-    this.filterOptions = this.myControl.valueChanges.pipe(
-      startWith(''),map(value=>this._filter(value))
-    );
-  }
+    // this.filterOptions = this.myControl.valueChanges.pipe(
+    //   startWith(''), map(value => this._filter(value))
+    //   );
+    }
 
+      private _filter(value: any): any
+      {
+        const filterValue: string = value.toLowerCase();
+        return this.options.filter(option => option.toLowerCase().includes(filterValue));
+      }
 
-
-  displayFunc(subject:any){
+  displayFunc(subject: any) {
     return subject ? subject.name : undefined;
   }
 
