@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+
 
 
 @Component({
