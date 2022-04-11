@@ -2,28 +2,28 @@
 <div class="container">
   <mat-form-field>
     <mat-label>Language</mat-label>
-  <mat-select>
-    <mat-option value="Angular">Angular </mat-option>
-    <mat-option value="React">React </mat-option>
-    <mat-option value="Vue">Vue </mat-option>
-  </mat-select>
+    <mat-select>
+      <mat-option value="Angular">Angular </mat-option>
+      <mat-option value="React">React </mat-option>
+      <mat-option value="Vue">Vue </mat-option>
+    </mat-select>
   </mat-form-field>
 </div>
 
 <br><br><br>
 <div class="container">
-<h1>Using Two-way Binding </h1>
-<mat-form-field>
-  <mat-label>Language</mat-label>
-<mat-select [(value)]="selectedValue">
-  <mat-option>None</mat-option>
-  <mat-option value="Angular">Angular </mat-option>
-  <mat-option value="React">React </mat-option>
-  <mat-option value="Vue">Vue </mat-option>
-</mat-select>
-</mat-form-field>
+  <h1>Using Two-way Binding </h1>
+  <mat-form-field>
+    <mat-label>Language</mat-label>
+    <mat-select [(value)]="selectedValue">
+      <mat-option>None</mat-option>
+      <mat-option value="Angular">Angular </mat-option>
+      <mat-option value="React">React </mat-option>
+      <mat-option value="Vue">Vue </mat-option>
+    </mat-select>
+  </mat-form-field>
 
-<h1>{{ selectedValue }}</h1>
+  <h1>{{ selectedValue }}</h1>
 
 </div>
 
@@ -31,24 +31,23 @@
 <div class="container">
   <mat-form-field>
     <mat-label>Language</mat-label>
-  <mat-select multiple>
-    <mat-option>None</mat-option>
-    <mat-optgroup label="Web">
-      <mat-option value="Angular">Angular </mat-option>
-      <mat-option value="React">React </mat-option>
-      <mat-option value="Vue">Vue </mat-option>
-    </mat-optgroup>
-    <mat-optgroup label="Favorate Language">
-      <mat-option value="CPP">CPP </mat-option>
-      <mat-option value="JavaScript">JavaScript </mat-option>
-      <mat-option value="flutter">flutter </mat-option>
-    </mat-optgroup>
-    <mat-optgroup label="Mobile">
-      <mat-option value="Samsung">Samsung </mat-option>
-      <mat-option value="iphone">iphone </mat-option>
-      <mat-option value="flutter">flutter </mat-option>
-    </mat-optgroup>
-  </mat-select>
+    <mat-select multiple>
+      <mat-option>None</mat-option>
+      <mat-optgroup label="Web">
+        <mat-option value="Angular">Angular </mat-option>
+        <mat-option value="React">React </mat-option>
+        <mat-option value="Vue">Vue </mat-option>
+      </mat-optgroup>
+      <mat-optgroup label="Favorate Language">
+        <mat-option value="CPP">CPP </mat-option>
+        <mat-option value="JavaScript">JavaScript </mat-option>
+        <mat-option value="flutter">flutter </mat-option>
+      </mat-optgroup>
+      <mat-optgroup label="Mobile">
+        <mat-option value="Samsung">Samsung </mat-option>
+        <mat-option value="iphone">iphone </mat-option>
+        <mat-option value="flutter">flutter </mat-option>
+      </mat-optgroup>
+    </mat-select>
   </mat-form-field>
 </div>
-
