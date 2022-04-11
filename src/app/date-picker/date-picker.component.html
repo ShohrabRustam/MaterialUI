@@ -1,4 +1,7 @@
 <div class="container">
-  <p>date-picker works!</p>
-
+ <mat-form-field>
+<input matInput [matDatepicker]=" myDatePicker">
+<mat-datepicker-toggle matSuffix [for]="myDatePicker"> </mat-datepicker-toggle>
+<mat-datepicker #myDatePicker></mat-datepicker>
+ </mat-form-field>
 </div>
