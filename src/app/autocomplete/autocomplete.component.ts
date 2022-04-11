@@ -13,6 +13,7 @@ import { startWith } from 'rxjs/operators';
   templateUrl: './autocomplete.component.html',
   styleUrls: ['./autocomplete.component.css']
 })
+
 export class AutocompleteComponent implements OnInit {
 
   options:string[]=["Angular", "React", "Vue"];
@@ -32,6 +33,7 @@ export class AutocompleteComponent implements OnInit {
     return subject ? subject.name : undefined;
   }
 
+  filterOptions= Observable<string[]>;
 
 
 }
