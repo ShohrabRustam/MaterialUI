@@ -9,3 +9,19 @@
   </mat-select>
   </mat-form-field>
 </div>
+
+<br><br><br>
+<div class="container">
+<h1>Using Two-way Binding </h1>
+<mat-form-field>
+  <mat-label>Language</mat-label>
+<mat-select [(value)]="selectedValue">
+  <mat-option value="Angular">Angular </mat-option>
+  <mat-option value="React">React </mat-option>
+  <mat-option value="Vue">Vue </mat-option>
+</mat-select>
+</mat-form-field>
+
+<h1>{{ selectedValue }}</h1>
+
+</div>
