@@ -26,14 +26,15 @@ export class AutocompleteComponent implements OnInit {
   ]
   constructor() { }
   myControl=new FormControl();
-  ngOnInit(): void {
-  }
+
+  filterOptions= Observable<string[]>;
+
+
 
   displayFunc(subject:any){
     return subject ? subject.name : undefined;
   }
 
-  filterOptions= Observable<string[]>;
 
 
 }
