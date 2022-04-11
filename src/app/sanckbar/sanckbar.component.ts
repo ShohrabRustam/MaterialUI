@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatSnackBar} from '@angular/material/snack-bar';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-sanckbar',
@@ -8,12 +8,18 @@ import {MatSnackBar} from '@angular/material/snack-bar';
 })
 export class SanckbarComponent implements OnInit {
 
-  constructor(private snackBar: MatSnackBar ) { }
+  constructor(private snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
   }
-  openSnakeBar(message:any,action:any){
-    this.snackBar.open(message,action);
+  openSnakeBar(message: any, action: any) {
+    let snackBarRef = this.snackBar.open(message, action);
+    snackBarRef.afterDismissed().subscribe(() => {
+      console.log("The sanckBar was dismissed ");
+    });
+    snackBarRef.onAction().subscribe(()=>{
+      console.log("The SankeBar Was triggered !");
+    })
   }
 
 }
