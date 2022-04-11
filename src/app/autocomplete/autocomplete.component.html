@@ -5,8 +5,8 @@
   <input type="text" matInput [matAutocomplete]="auto">
   <mat-autocomplete  #auto="matAutocomplete">
     <!-- fatchin the autocomplete data from the variable  -->
-<mat-option *ngFor="let option of options" [value]="option">
-  <h1>{{ option }}</h1>
+<mat-option *ngFor="let option of objectOptions" [value]="option">
+  <h1>{{ option.name }}</h1>
 </mat-option>
 
   </mat-autocomplete>
