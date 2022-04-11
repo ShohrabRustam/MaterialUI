@@ -3,7 +3,7 @@
 <mat-form-field>
   <mat-label>Name</mat-label>
   <input type="text" matInput [matAutocomplete]="auto">
-  <mat-autocomplete  #auto="matAutocomplete">
+  <mat-autocomplete  #auto="matAutocomplete" [displayWith]="displayFunc">
     <!-- fatchin the autocomplete data from the variable  -->
 <mat-option *ngFor="let option of objectOptions" [value]="option.name">
   <h1>{{ option.name }}</h1>

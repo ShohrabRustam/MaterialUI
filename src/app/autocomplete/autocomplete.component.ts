@@ -15,6 +15,9 @@ export class AutocompleteComponent implements OnInit {
     {name:"Vue"}
 
   ]
+  displayFunc(subject:any){
+    return subject ? subject.name : undefined;
+  }
   constructor() { }
 
   ngOnInit(): void {
