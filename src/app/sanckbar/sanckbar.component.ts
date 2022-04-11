@@ -13,7 +13,7 @@ export class SanckbarComponent implements OnInit {
   ngOnInit(): void {
   }
   openSnakeBar(message: any, action: any) {
-    let snackBarRef = this.snackBar.open(message, action);
+    let snackBarRef = this.snackBar.open(message, action,{duration:2000});
     snackBarRef.afterDismissed().subscribe(() => {
       console.log("The sanckBar was dismissed ");
     });
