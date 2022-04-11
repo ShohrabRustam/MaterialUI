@@ -8,6 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class AutocompleteComponent implements OnInit {
 
   options:string[]=["Angular", "React", "Vue"];
+  objectOptions=[
+    {name:"Angular"},
+    {name:"Angular Material"},
+    {name:"React"},
+    {name:"Vue"}
+
+  ]
   constructor() { }
 
   ngOnInit(): void {
