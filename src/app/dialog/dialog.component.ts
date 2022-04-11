@@ -15,6 +15,10 @@ export class DialogComponent implements OnInit {
   }
 
   openDialog(){
-    this.dialog.open(DialogExampleComponent);
+    // this.dialog.open(DialogExampleComponent);
+    let dialogRef = this.dialog.open(DialogExampleComponent);
+    dialogRef.afterClosed().subscribe(result=>{
+      console.log(`Dialog Result : ${result}` );
+    })
   }
 }
