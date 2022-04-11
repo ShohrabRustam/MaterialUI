@@ -25,9 +25,20 @@ export class AutocompleteComponent implements OnInit {
 
   ]
   constructor() { }
-  myControl=new FormControl();
+  myControl:any=new FormControl();
 
-  filterOptions= Observable<string[]>;
+  filterOptions :any= Observable<string[]>;
+
+  private _filter(value:any):any{
+    const filterValue:string=value.toLowerCase();
+    return this.options.filter(option=>option.toLowerCase().includes(filterValue));
+  }
+
+  ngOnInit(): void {
+    this.filterOptions = this.myControl.valueChanges.pipe(
+      startWith(''),map(value=>this._filter(value))
+    );
+  }
 
 
 
