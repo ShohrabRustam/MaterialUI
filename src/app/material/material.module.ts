@@ -20,6 +20,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
 
 
 const MaterialComponent=[
@@ -41,7 +42,8 @@ const MaterialComponent=[
   MatTabsModule,
   MatStepperModule,
   MatInputModule,
-  MatFormFieldModule
+  MatFormFieldModule,
+  MatSelectModule
 ]
 
 @NgModule({
