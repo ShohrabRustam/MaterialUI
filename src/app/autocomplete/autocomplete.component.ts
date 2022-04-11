@@ -20,7 +20,7 @@ export class AutocompleteComponent implements OnInit {
     return subject ? subject.name : undefined;
   }
   constructor() { }
-
+  myControl=new FormControl();
   ngOnInit(): void {
   }
 
