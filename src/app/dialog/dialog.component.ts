@@ -14,6 +14,12 @@ export class DialogComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // openDialog(){
+  //   // this.dialog.open(DialogExampleComponent);
+  //   let dialogRef = this.dialog.open(DialogExampleComponent);
+
+  // }
+
   openDialog(){
     // this.dialog.open(DialogExampleComponent);
     let dialogRef = this.dialog.open(DialogExampleComponent);
