@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogExampleComponent } from '../dialog-example/dialog-example.component';
-
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 @Component({
   selector: 'app-dialog',
   templateUrl: './dialog.component.html',
