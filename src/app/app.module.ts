@@ -29,7 +29,6 @@ import { TooltipComponent } from './tooltip/tooltip.component';
 import { SanckbarComponent } from './sanckbar/sanckbar.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { DialogExampleComponent } from './dialog-example/dialog-example.component';
-import { TabledataComponent } from './tabledata/tabledata.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +57,6 @@ import { TabledataComponent } from './tabledata/tabledata.component';
     SanckbarComponent,
     DialogComponent,
     DialogExampleComponent,
-    TabledataComponent,
   ],
   entryComponents:[DialogExampleComponent],
   imports: [
